@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(89, 99, 107);
+    background-color: rgb(246, 246, 246);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,17 +26,20 @@ body {
 
 .header {
     position: relative;
-    background-image: url('https://source.unsplash.com/400x200/?restaurant');
-    background-size: cover;
-    background-position: center;
     height: 200px;
     padding: 20px;
+    background-color: #444;
     color: white;
 }
 
 .header h2 {
     margin-top: 100px;
     font-size: 20px;
+}
+.header small{
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
 }
 
 .search-bar {
@@ -58,10 +61,6 @@ body {
     font-size: 16px;
 }
 
-.search-bar i {
-    color: gray;
-}
-
 .categories {
     display: flex;
     justify-content: space-around;
@@ -74,11 +73,6 @@ body {
     font-size: 12px;
 }
 
-.categories i {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
 .offers {
     padding: 0 20px 20px;
 }
@@ -89,11 +83,13 @@ body {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;;
 }
 
-.offer-card img {
+.offer-image {
     width: 100px;
-    object-fit: cover;
+    height: 100px;
+    background-color: #ccc;
 }
 
 .offer-details {
@@ -124,4 +120,6 @@ body {
     font-size: 14px;
     color: teal;
     text-align: right;
+    padding: 10px;
 }
+
