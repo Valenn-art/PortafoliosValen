@@ -1,0 +1,79 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+*{
+ padding: auto;
+ margin: auto;
+ box-sizing: border-box;
+ list-style-type: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(89, 99, 107);
+    display: grid;
+    place-items: center;
+
+}
+.menu{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 800px){
+    body {
+        background-color: rgb(0, 73, 156);
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 420px){
+    body {
+        background-color: beige;
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+@media screen and (orientation:portrait){
+    body{
+        background-color: brown;
+    }
+    .menu {
+        display: inline-block;
+        position: fixed;
+        top: 0%;
+        left: -200%;
+        width: 70%;
+        height: 100%;
+        background-color: rgb(94, 89, 93);
+        display: flex;
+        padding: 1em 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        ul{
+            width: 100%;
+            flex-direction: column;
+        }
+        li{
+            text-align: center;
+            width: 100%;
+            padding: 1em;
+            background-color: rgb(15, 12, 12);
+            color: white;
+        }
+        li:hover{
+            border-bottom: solid 2px white;
+        }
+    }
+    }
