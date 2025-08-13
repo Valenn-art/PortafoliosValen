@@ -52,9 +52,8 @@ body {
 }
 
 .search-bar {
-    position: absolute; /* Flotante */
-    bottom: -25px; /* Sale un poco del header */
-    left: 50%;
+    position: absolute; 
+    bottom: -25px; 
     transform: translateX(-50%);
     display: flex;
     align-items: center;
